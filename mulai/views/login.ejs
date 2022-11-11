@@ -1,0 +1,36 @@
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body">
+      <h1 class="text-center mb-3">Masuk</h1>
+
+      <%= include ("./partials/messages"); %>
+      
+      <form action="/users/login" method="POST">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter Email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="form-control"
+            placeholder="Enter Password"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Masuk</button>
+      </form>
+      <p1 class="lead mt-4">
+       Tidak Memiliki Akun? <a href="/users/register" style="color:rgb(6, 123, 43)" > <p1>Daftar</p1></a>
+      </p1>
+    </div>
+  </div>
+</div>
