@@ -37,15 +37,21 @@
 		
 		<!-- <h1><a href="index.html">Guniho Branda</a></h1> -->
 		<ul>
-			<li><a href="index.html">HOME</a></li>
-			<li><a href="about.html">ABOUT</a></li>
-			<li><a href="service.html">SERVICE</a></li>
-			<li><a href="/users/home">PRDOUK</a></li>
-			<li class="active"><a href="/materi">MATERI</a></li>
+			<li><a href="/index">HOME</a></li>
+			<li><a href="#">ABOUT</a></li>
+			<li class="dropdown"><a href="#">SERVICE</a>
+				<ul class="isi-dropdown">
+					<li><a href="#">SENSIE</a></li>
+					<li style="margin-right: 200px;"><a href="/faq">FAQ</a></li>
+					<li><a href="#">NEWS</a></li>
+					
+				</ul>
+			</li>
+			<li><a href="/users/home">PRODUK</a></li>
+			<li><a href="/materi">MATERI</a></li>
 			<li><a href="/users/logout" class="btn btn-secondary">Logout</a></li>
-			
-			
 		</ul>
+		
 		
 	<!-- label -->
 	<section class="label">
@@ -61,7 +67,15 @@
 			
 				<atur >Home / Materi </atur>
 		</br>
-			
+		<section class="service">
+			<div class="container">
+				<h3>Daftar Produk</h3>
+	
+				
+			</div>
+		</section>
+
+		
 		</div>
 	</div>
 
@@ -69,8 +83,7 @@
 
 
 
-
-
+	
 	<!-- footer -->
 	<footer>
 		<div class="container">
@@ -90,3 +103,37 @@
    
 </body>
 </html>
+
+
+        <!-- <div className="columns mt-5">
+            <div className="column is-half">
+              <Link to="add" className="button is-success">
+                Add New
+              </Link>
+              <table border="1" style=" margin-right: 60px;margin-left: 60px;">
+                <thead>
+                  <tr bgcolor="#9d97a3" align="center"bgcolor="#9d97a3" align="center">
+                    <th colspan="1" style="padding-left: 20px; padding-right: 20px">No</th>
+                    <th style="padding-left: 70px; padding-right: 70px">Name</th>
+                    <th style="padding-left: 70px; padding-right: 70px">Email</th>
+                    <th style="padding-left: 70px; padding-right: 70px">Gender</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  {users.map((user, index) => (
+                    <tr key={user._id}>
+                      <td></td>
+                      <td ><%= Name %></td>
+                      <td><%=  %></td>
+                      <td></td>
+                      <td>
+                        
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div> -->
+

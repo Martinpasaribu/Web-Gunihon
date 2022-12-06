@@ -1,0 +1,167 @@
+
+ <%= Formulir  %>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Guniho Branda</title>
+   
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+ 
+	<link rel="stylesheet" type="text/css" href="../css/style2.css">
+	
+
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70" >
+	<!-- loader -->
+	<div class="bg-loader">
+		<div class="loader"></div>
+	</div>
+
+	<!-- header -->
+	<div class="medsos">
+		<div class="container">
+			<ul>
+				<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+			</ul>
+		</div>
+	</div>
+    
+	<header>
+		
+		<!-- <h1><a href="index.html">Guniho Branda</a></h1> -->
+		<ul>
+			<li><a href="/index">HOME</a></li>
+			<li><a href="/about">ABOUT</a></li>
+			<li class="dropdown"><a href="#">SERVICE</a>
+				<ul class="isi-dropdown">
+					<li><a href="/sense">SENSEI</a></li>
+					<li style="margin-right: 200px;"><a href="/faq">FAQ</a></li>
+					<li><a href="/berita">NEWS</a></li>
+					
+				</ul>
+			</li>
+			<li><a href="/users/home">PRODUK</a></li>
+			<li><a href="/materi">MATERI</a></li>
+			
+		</ul>
+		
+		
+	<!-- label -->
+	<section class="label">
+
+	</section>
+
+</header>
+
+	<!-- baris -->
+	<!-- <div class="medsos">
+		<div class="container">
+			
+			
+				<atur >Home / Produk / Formulir </atur>
+		</br>
+			
+
+
+
+		</div>
+	</div> -->
+
+	<section class="service">
+		<div class="container">
+
+       
+
+
+        <h1 class="judul" style="text-align:center" > Formulir </h1>
+        </br>
+        <h4 class="penjelas"> Detail Transaksi  </h4>
+
+        <p style="font-weight: bold ;text-align:center " class="penjelas"> Data Pribadi </p>
+     
+        <p class="penjelas"> Nama </p>
+
+        <p class="penjelas"> Kelas </p>
+        <p class="penjelas"> Email </p>
+
+        </br>
+        <p style="font-weight: bold ;text-align:center " class="penjelas"> Petunjuk Pembayaran </p>
+        </br>
+        <p class="penjelas"> Seilahkan Transfer Pembayara Ke Rekening Dibawah ini </p>
+
+        <p class="penjelas"> Nama Pemilik Rekening =  Lydia Mawar Ningsih  (BCA)</p>
+        <p class="penjelas"> Nama Bank             =  Bank Central Asia </p>
+        <p class="penjelas"> No Rekening           =  8907384911 </p>
+        </br>
+        <p style="color:rgb(109, 150, 129)"  class="penjelas"> Dalam Waktu 24 Jam kami Tidak Menerima Konfirmasi Pembayaraan Maka Kami Anggap Prderan Pembelian anda Batal Harap Untuk Melakukan konfirmasi kepada kami, silahkan Klik Tombol dibawah ini untuk melakukan konfirmasi pembayaran.</p>
+
+        </br>
+
+
+        <div class="container col-sm-12" id="choose-files" oncopy="return false" oncut="return false" onpaste="return false">
+            <div class="row">
+          
+              <form action="/retailer/processcashback/cashback" method="post" enctype="multipart/form-data">
+                     <b>Cashback:</b> <input type="file" name="cashbackfiles" id="cashbackfiles"
+                     multiple/>
+                     <input class="btn btn-primary" type="submit" style="border-radius: 4px;" name="cashbackfiles" value="Upload">
+                 </form>
+          
+                 <br>
+          
+                <form action="/retailer/processcashback/supercoins" method="post" enctype="multipart/form-data">
+                    <b>SuperCoins:</b> <input type="file" name="supercoinsfiles" id="supercoinsfile"
+                    multiple>
+                    <button class="btn btn-primary" type="submit" style="border-radius: 4px;">Upload</button>
+                 </form>
+            </div>
+          </div>
+    
+    
+    
+    </br>
+
+        <ul style="background-color: #ffffff;">
+
+            <li style="background-color: #ffffff;"> Konfirmasi Via WA </li>
+            <li style="background-color: #ffffff;" ><a href="#"><i class="fab fa-whatsapp"></i> +62812-8687-3422 </a></li>
+        </ul>
+
+
+
+    </div>
+</section>
+
+
+
+
+
+
+
+	<!-- footer -->
+	<footer>
+		<div class="container">
+			<small>Copyright &copy; 2022 - Go-Project. All Rights Reserved.</small>
+		</div>
+	</footer>
+
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".bg-loader").hide();
+		})
+
+		
+	</script>
+
+   
+</body>
+</html>

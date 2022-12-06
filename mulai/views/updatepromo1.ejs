@@ -1,0 +1,58 @@
+<div class="card">
+    <div class="card-header">
+        <h4 class="font-weight-bold">Update User</h4>
+    </div>
+    <div class="card-body">
+        <form action="/updatepromo1/<%= customer._id %>" method="post">
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label class="col-form-label" for="firstname"> Kelas</label>
+                        <input type="text" class="form-control" value="<%= customer.name %>" name="name" placeholder="enter first name" id="firstname">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label class="col-form-label" for="lastname"> Harga Asli </label>
+                        <input type="hasli" class="form-control" value="<%= customer.hasli %>" name="hasli" placeholder="enter last name" id="lastname">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label class="col-form-label" for="firstname">Harga Promo</label>
+                        <input type="hpromo" class="form-control" value="<%= customer.hpromo %>" name="hpromo" placeholder="enter your phone number" id="phonenumber">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label class="col-form-label" for="firstname">Fas 1</label>
+                        <input type="fit1" class="form-control" value="<%= customer.fit1 %>" name="fit1" placeholder="enter your phone number" id="fit1">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label class="col-form-label" for="firstname">Fas 2</label>
+                        <input type="fit2" class="form-control" value="<%= customer.fit2 %>" name="fit2" placeholder="enter your phone number" id="fit2">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label class="col-form-label" for="firstname">Fas 3</label>
+                        <input type="fit3" class="form-control" value="<%= customer.fit3 %>" name="fit3" placeholder="enter your phone number" id="fit3">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label class="col-form-label" for="firstname">Fas 4</label>
+                        <input type="fit4" class="form-control" value="<%= customer.fit4 %>" name="fit4" placeholder="enter your phone number" id="fit4">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="">
+                <button type="submit" class="btn btn-success">Update</button>
+                <a href="/" class="btn btn-light">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Guniho Branda</title>
+   
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+ 
+	<link rel="stylesheet" type="text/css" href="../css/style2.css">
+	
+
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70" >
+	<!-- loader -->
+	<div class="bg-loader">
+		<div class="loader"></div>
+	</div>
+
+	<!-- header -->
+	<div class="medsos">
+		<div class="container">
+			<ul>
+				<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+			</ul>
+		</div>
+	</div>
+    
+	<header>
+		
+		<!-- <h1><a href="index.html">Guniho Branda</a></h1> -->
+		<ul>
+			<li><a href="/data">DATA</a></li>
+			<li><a href="/about2">ABOUT</a></li>
+      <li><a href="/foto">Foto</a></li>
+      <li><a href="/pembelian">Pembelian</a></li>
+      <li class="dropdown"><a href="#">Promo</a>
+        <ul class="isi-dropdown">
+            <li><a href="/Produk">Promo1</a></li>
+            <li style="margin-right: 200px;"><a href="/produk1">Promo2</a></li>
+            <li><a href="/produk2">Promo3</a></li>
+
+        </ul>
+    </li>
+			
+		</ul>
+		
+		
+	<!-- label -->
+	<section class="label">
+
+	</section>
+
+</header>
+
+	<!-- baris -->
+	<!-- <div class="medsos">
+		<div class="container">
+			
+			
+				<atur >Home / Produk / Formulir </atur>
+		</br>
+			
+
+
+
+		</div>
+	</div> -->
+
+	<section class="service">
+		<div class="container">
+        <h1 class="judul" style="text-align:center" > Promo 3 </h1>
+        <p class="penjelas"> Ubah Promo </p>
+        
+		<form action="/users/promo3" method="POST">
+			<p>
+                Kelas
+            </p>
+            <input type="teks" id="name" name="name" class="form-input"  value="<%= typeof name != 'undefined' ? name : '' %>" placeholder="" autocomplete="off" required>
+            
+			<p>
+               Harga Asli
+            </p>
+            <input type="hasli" id="hasli" name="hasli" class="form-input"  value="<%= typeof hasli != 'undefined' ? hasli : '' %>" placeholder="" autocomplete="off" required>
+               
+            
+            <p>
+                Harga Promo
+            </p>
+            <input type="hpromo" id="hpromo" name="hpromo" class="form-input"  value="<%= typeof hpromo != 'undefined' ? hpromo : '' %>" placeholder="" autocomplete="off" required>
+            
+            <p>
+                Fasilitas 1
+            </p>
+            <input type="fit1" id="fit1" name="fit1" class="form-input"  value="<%= typeof fit1 != 'undefined' ? fit1 : '' %>" placeholder="" autocomplete="off" required>
+            
+            <p>
+                Fasilitas 2
+            </p>
+            <input type="fit2" id="fit2" name="fit2" class="form-input"  value="<%= typeof fit2 != 'undefined' ? fit2 : '' %>" placeholder="" autocomplete="off" required>
+            
+            <p>
+                Fasilitas 3
+            </p>
+            <input type="fit3" id="fit3" name="fit3" class="form-input"  value="<%= typeof fit3 != 'undefined' ? fit3 : '' %>" placeholder="" autocomplete="off" required>
+            
+            <p>
+                Fasilitas 4
+            </p>
+            <input type="fit4" id="fit4" name="fit4" class="form-input"  value="<%= typeof fit4 != 'undefined' ? fit4 : '' %>" placeholder="" autocomplete="off" required>
+            
+
+
+			  <button type="submit" class="btn btn-primary btn-block">
+				Kirim
+			  </button>
+        </form>
+
+     
+        <br><br><br>
+
+    </div>
+
+
+	
+	<br><br><br>
+	<h3 class="judul" style=" text-align: center;" >Promo 3</h3>
+
+	<div className="columns mt-5">
+		<div className="column is-half">
+		  <Link to="add" className="button is-success">
+		  =====================================================================================
+		  </Link>
+		  <table border="1" style=" margin-right: 60px;margin-left: 60px;">
+			<thead>
+			  <tr bgcolor="#9d97a3" align="center"bgcolor="#9d97a3" align="center">
+				
+				<th colspan="1" style="padding-left: 20px; padding-right: 20px">No</th>
+				<th style="padding-left: 70px; padding-right: 70px">Kelas</th>
+				<th style="padding-left: 70px; padding-right: 70px">Harga Asli</th>
+				<th style="padding-left: 80px; padding-right: 80px">Harga Promo</th>
+				<th style="padding-left: 80px; padding-right: 80px">Aksi</th>
+			  </tr>
+			</thead>
+			<tbody>
+				<% for(let i = 0; i < pro3.length; i++){ %>
+				<tr key={user._id}>
+				  <td style="text-align: center"><%= i +1 %></td>
+				  <td style="padding-left: 10px"><%= pro3[i].name %></td>
+				  <td style="padding-left: 10px"> <%= pro3[i].hasli %></td>
+				  <td style="padding-left: 10px"> <%= pro3[i].hpromo %></td>
+
+				  <td class="text-center">
+
+					<form action="/users/about2:id" 
+						method="POST">
+					 
+				   
+					<a href="#" class="btn btn-outline-warning btn-sm button-update"
+					  >Edit</a
+					>
+					<button type="submit" 
+					
+					class="btn btn-outline-danger btn-sm" 
+					onclick="return confirm('Apa kamu yakin ingin menghapus aku dari ingatan kamu?');"
+					>
+					  Delete
+					</button>
+				  </form>
+				  </td>
+
+
+				</tr>
+                
+
+			</tbody>
+		  </table>
+          <aa class="btn btn-primary btn-block"  style="background-color:white">
+            <P>Fasilitas :<br><br></P>
+            <P><%= pro3[i].fit1 %><br></P>
+            <P><%= pro3[i].fit2 %><br></P>
+            <P><%= pro3[i].fit3 %><br></P>
+            <P><%= pro3[i].fit4 %><br></P>
+            <% } %>
+         </aa>
+
+		</div>
+	  </div>
+
+</div>
+
+<br><br>
+
+</section>
+
+
+
+
+
+
+
+	<!-- footer -->
+	<footer>
+		<div class="container">
+			<small>Copyright &copy; 2022 - Go-Project. All Rights Reserved.</small>
+		</div>
+	</footer>
+
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".bg-loader").hide();
+		})
+
+		
+	</script>
+ 
+   
+</body>
+</html>

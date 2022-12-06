@@ -36,14 +36,21 @@
 		
 			<!-- <h1><a href="index.html">Guniho Branda</a></h1> -->
 			<ul>
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="about.html">ABOUT</a></li>
-				<li><a href="service.html">SERVICE</a></li>
-                <li><a href="/users/home">PRODUK</a></li>
-				<li class="active"><a href="produk.html">MATERI</a></li>
-				<li  <a href="/users/logout" class="btn btn-secondary">Logout</a></li>
+				<li><a href="/index">HOME</a></li>
+				<li><a href="/about">ABOUT</a></li>
+				<li class="dropdown"><a href="#">SERVICE</a>
+					<ul class="isi-dropdown">
+						<li><a href="/sense">SENSEI</a></li>
+						<li style="margin-right: 200px;"><a href="/faq">FAQ</a></li>
+						<li><a href="/berita">NEWS</a></li>
+						
+					</ul>
+				</li>
+				<li><a href="/users/home">PRODUK</a></li>
+				<li><a href="/materi">MATERI</a></li>
+				
 			</ul>
-			
+			<img  style="float:left; margin: 11px 14px 10px 14px; color: transparent;" src="logo2.png" />
 		<!-- label -->
 		<section class="label">
 	
@@ -81,19 +88,27 @@
 					</br>
 				</br></br>
 				
+				<pdf class="pdf">
+
+					<a href="Pelajaran1.pdf" download>Link download Materi PDF </a>
+
+				</pdf></br></br>
+				
+
+
 				<figure>
-					<h2> Video Pelajaran 1</h2>
+					<h3 class="judul" style="text-align:center;"> Video Pelajaran 1</h2>
 					
 					<tex1 > <video
-						width="500"
-						height="300"
+						width="922"
+						height="700"
 						
 						src="vid1.mp4" 
 						type="video/mp4"
 						controls
 						autoplay
 						muted
-				    ></video>   <b> sd s s  scscs</b></text1>
+				    ></video>   <b style="text-align:left;size: 30px;color:black;  position:relative;padding-bottom:10px;padding-top:-300 px; padding-right:50px;"> </b></text1>
 				
 				
 					</figure>  
@@ -117,7 +132,7 @@
 	<!-- footer -->
 	<footer>
 		<div class="container">
-			<small>Copyright &copy; 2022 - Kelompok 12. All Rights Reserved.</small>
+			<small>Copyright &copy; 2022 - Go-Project. All Rights Reserved.</small>
 		</div>
 	</footer>
 
