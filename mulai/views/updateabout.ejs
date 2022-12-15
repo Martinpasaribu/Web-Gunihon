@@ -1,0 +1,29 @@
+<div class="card">
+    <div class="card-header">
+        <h4 class="font-weight-bold">Update About</h4>
+    </div>
+    <div class="card-body">
+        <form action="/updateabout/<%= abouts._id %>" method="post">
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label class="col-form-label" for="firstname"> Jalan </label>
+                        <input type="text" class="form-control" value="<%= abouts.teks %>" name="teks" placeholder="enter first name" id="firstname">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label class="col-form-label" for="lastname"> Kota </label>
+                        <input type="text" class="form-control" value="<%= abouts.name %>" name="name" placeholder="enter last name" id="lastname">
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="">
+                <button type="submit" class="btn btn-success">Update</button>
+                <a href="/about2" class="btn btn-light">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>

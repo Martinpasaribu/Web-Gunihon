@@ -2,6 +2,8 @@ const users = require('../models/User');
 const promo1 = require('../models/promo1');
 const promo2 = require('../models/promo2');
 const promo3 = require('../models/promo3');
+const about = require('../models/about');
+
 
 const getAllCustomers = async (req, res, next) => {
     const list = await users.find().exec();
@@ -90,6 +92,35 @@ const updatepromo1 = async(req, res, next) => {
 
 
 
+const getUpdateaboutView = async (req, res, next) => {
+    try {
+        const id = req.params.id;
+        const onecustomer = await about.findById(id).exec();
+        res.render('updateabout', {
+            abouts: onecustomer
+        });
+    } catch (error) {
+        res.status(400).send(error.message);
+    }
+}
+
+
+const updateabout = async(req, res, next) => {
+    // const {error} = validate(req.body);
+    // if (error) return res.status(422).send(error.details[0].message);
+    const id = req.params.id;
+    const data = req.body;
+    let customer = await about.findByIdAndUpdate(id, {
+        teks: data.teks,
+        name: data.name,
+
+    }, {new: true});
+    if(!customer) return res.status(404).send('Customer with the given id not found');
+
+    res.redirect('/about2');
+}
+
+
 
 const getDeleteCustomerView = async (req, res, next) => {
     try {
@@ -115,14 +146,69 @@ const deleteCustomer = async (req, res, next) => {
 }
 
 
+const getDeletePromo1View = async (req, res, next) => {
+    try {
+        const id = req.params.id;
+        const onecustomer = await promo1.findById(id).exec();
+        res.render('deletePromo1', {
+            customer: onecustomer
+        });
+    } catch (error) {
+        res.status(400).send(error.message);
+    }
+}
+
+const deletePromo1 = async (req, res, next) => {
+    try {
+        const id = req.params.id;
+        const customer = await promo1.findByIdAndRemove(id);
+        if(!customer) return res.status(404).send('Customer with the given id not found');
+        res.redirect('/Produk');        
+    } catch (error) {
+        res.status(400).send(error.message);
+    }
+}
+
+const getDeleteAboutView = async (req, res, next) => {
+    try {
+        const id = req.params.id;
+        const onecustomer = await about.findById(id).exec();
+        res.render('deleteAbout', {
+            abouts: onecustomer
+        });
+    } catch (error) {
+        res.status(400).send(error.message);
+    }
+}
+
+const deleteAbout = async (req, res, next) => {
+    try {
+        const id = req.params.id;
+        const customer = await about.findByIdAndRemove(id);
+        if(!customer) return res.status(404).send('Customer with the given id not found');
+        res.redirect('/about2');        
+    } catch (error) {
+        res.status(400).send(error.message);
+    }
+}
+
+
 module.exports = {
     getAllCustomers,
     getAddCustomerView,
     addCustomer,
     getUpdateCustomerView,
     updateCustomer,
+    getUpdateaboutView,
+    updateabout,
     getUpdatepromo1View,
     updatepromo1,
     getDeleteCustomerView,
-    deleteCustomer
+    deleteCustomer,
+    getDeletePromo1View,
+    deletePromo1,
+    getDeleteAboutView,
+    deleteAbout
+
+
 }

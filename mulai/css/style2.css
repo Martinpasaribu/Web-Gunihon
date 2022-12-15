@@ -1,8 +1,7 @@
 * {
-	margin:0%;	
-	font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-	font-weight: normal;
+
+    font-family: "Poppins", sans-serif;
+	
 }
 
 
@@ -97,6 +96,20 @@ li.dropdown {
     color: #000000 !important;
     background: #b9c4c9 !important;
 }
+.rc-Card {
+    position: relative;
+    width: 100%;
+    -webkit-transition: all .45s cubic-bezier(.23,1,.32,1);
+    -moz-transition: all .45s cubic-bezier(.23,1,.32,1);
+    -o-transition: all .45s cubic-bezier(.23,1,.32,1);
+    -ms-transition: all .45s cubic-bezier(.23,1,.32,1);
+    transition: all .45s cubic-bezier(.23,1,.32,1);
+    border-radius: 3;
+    overflow: hidden;
+}
+
+
+
 /* 
 formulir  */
 
@@ -122,12 +135,16 @@ formulir  */
     border-color: #eb6864;
 }
 .text-center {
-	flex: 1 1 auto;
-    min-height: 1px;
-    padding-top: 1.25rem;
+    flex: 1 1 auto;
+    min-height: 66px;
+    padding-top: -0.75rem;
     padding-right: 1rem;
+    padding-bottom: -27.75rem;
     padding-bottom: 1.25rem;
-    padding-left: 1rem
+    padding-left: 1rem;
+    padding-left: 25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 0rem;
 }
 
 .search-btn{
@@ -244,6 +261,11 @@ header ul li a:hover .btn-secondary  {
     background-color: #f25754;
 }
 
+.ha{
+    margin-top:10px;
+}
+
+
 header ul  .active {
     background-color: #b9c4c9;
     color: #000000;
@@ -298,7 +320,8 @@ atur {
 	border:3px solid #fff;
 }
 section {
-	padding:100px 0;
+	/* padding:100px 0; */
+    padding: 21px 0;
 }
 section h3 {
 	text-align: center;
@@ -319,8 +342,20 @@ section h3 {
 	margin-bottom: 20px;
 	text-align: center;
 }
+
+.hii{
+
+    font-weight: bold; font-size:30px;
+    padding-left: -20px;color:rgb(255, 255, 255);
+    background-color:transparent;
+    text-align: left;
+    margin-top:70px;
+    padding-top: 70px;
+
+}
 .service {
 	background-color: #f9f9f9;
+    padding-top: 87px;
 }
 .box {
 	color: #128277;
@@ -380,18 +415,55 @@ footer {
 }
 .label {
 	background-color: #128277;
-	background-size: 1130px;
+	background-size:1800px;
 	color: #fff;
-	background-image: url(/gambar/header.jpg);
+	background-image: url(/gambar/header.png);
 	
 
+}
+.labelabout {
+	background-color: #128277;
+	background-size:1800px;
+	color: #fff;
+	background-image: url(/gambar/about.png);
+	
+
+}
+
+.labelpromo {
+	background-color: #128277;
+	background-size:1846px;
+	color: #fff;
+	background-image: url(/gambar/header3.png);
+	
+
+}
+
+.labelmateri{
+    background-color: #ffffff;
+	background-size:2021px;
+	color: #fff;
+	background-image: url(/gambar/fotomateri.png);
+	
+}
+
+.labelsense{
+    background-color: #ffffff;
+	background-size:2021px;
+	color: #fff;
+	background-image: url(/gambar/header.png);
+	
+}
+
+.content-m{
+    color: rgb(239, 6, 6);
 }
 
 /* 
 Berita */
 
 
-.main_menu_area{overflow:visible; background:#0D0E0F; min-height:40px; margin-bottom: 30px;    border-radius: 20px;}
+.main_menu_area{overflow:visible; background:#2c4444; min-height:40px; margin-bottom: 30px;    border-radius: 10px;}
 .main_menu_area ul{margin:0; padding:0; list-style:none ; background-color: #000;}
 .main_menu_area ul li{float:left; position:relative ; background-color: #000; }
 .main_menu_area ul li a{color:#FFF; display:block;font-family: 'poppins'; font-size:15px; }
@@ -427,17 +499,49 @@ Berita */
 .judul{
   width: 100%;
   box-sizing: border-box;
-  background-image: linear-gradient(#004A79,#128277);
+  /* background-image: linear-gradient(#004A79,#128277); */
   padding: 10px;
+  background-color: #648C8C;
   padding-bottom: 4px;
   font-size: 20px;
   font-weight: bold;
   color: white;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-
 }
+
+.judulpromo{
+    width: 100%;
+    box-sizing: border-box;
+    /* background-image: linear-gradient(#004A79,#128277); */
+    padding: 10px;
+    background-color: #BCBABE;
+    padding-bottom: 4px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-align: center;
  
+   
+  }
+  .tanggalpromo{
+    color: white;
+    background-color: #1995aD;
+    padding: 10px 0px 10px 10px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius:13px;
+ 
+  }
+  .tanggalpromo strike{
+    color: white;
+    background-color: #1995aD;
+    padding: 10px 0px 10px 10px;
+    text-decoration: line-through;
+    text-decoration-color: #000000;
+
+  }
+
 .tanggal{
   color: white;
   background-color: #17204E;
@@ -445,8 +549,10 @@ Berita */
 }
  
 .isiberita{
-  padding: 10px;
-  text-align: justify;
+    padding: 5px;
+    text-align: justify;
+    margin-bottom: -51px;
+
 }
  
 .tombol{
@@ -458,6 +564,8 @@ Berita */
   text-decoration: none;
  
 }
+
+
  
 .tombol .btn{
   padding: 10px;
@@ -465,6 +573,38 @@ Berita */
   font-size: 15px;
   color: white;
   padding: 10px 20px 10px 20px;
+}
+
+.tulisanpromo{
+    
+        
+        background-color: #A1d6e2;
+        width: 100%;
+        top:2px;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        padding: 14px 80px 14px 20px;
+        left:20px
+
+}
+
+
+ .btnpromo    {
+    background-color: #e04e46;
+    position: relative;
+    color:white;
+    left: 200px;
+    top:-1px;
+    bottom:3px;
+    width: 50%;
+    height: 120px;
+    margin-left: 8px;
+    padding:10px 10px 5px 10px;
+    border-radius: 12px;
+    
+
+
 }
  
 .tombol .btn:hover{
@@ -516,7 +656,7 @@ Berita */
 
 @media (min-width: 1200px){
 	.container{
-		max-width: 1200px;
+		max-width: 1230px;
 	}
 	.container-lg{
 		max-width: 1200px;
@@ -592,7 +732,12 @@ img{
 }
 .plans-column-2 {
     padding-right: 10px;
-    padding-left: 10px;
+    padding-left: 35px;
+    padding-bottom: 30px;
+    border-color:black;
+    border-width: 1px;
+    border-radius: 30px;
+
 }
 w-col-6 {
     width: 50%;
@@ -611,10 +756,13 @@ w-col-6 {
     min-height: 300px;
     margin-bottom: 0;
     padding: 16px;
-    border-radius: 8px;
+    border-radius: 35px;
     background-color: #fff;
     color: #2b2b2b;
     text-align: center;
+    border-color:black;
+    border-width: 2px;
+    border: 3px solid #000000; 
 }
 .plan-heading {
     display: -webkit-box;
@@ -807,20 +955,23 @@ p {
 }
 .w-button {
     display: inline-block;
-    padding: 9px 15px;
-    background-color: #3898ec;
-    color: #fff;
+    padding: 17px 15px;
+    background-color: #96C9CA;
+    color: #000;
+    font-weight: bold;
     border: 0;
     line-height: inherit;
     text-decoration: none;
     cursor: pointer;
-    border-radius: 0;
+    border-radius: 35px;
+    width: 742px;
+    height: 60px;
 }
 
 a {
-	font-family: 'Times New Roman', Times, serif;
+    font-family: "Poppins", sans-serif;
     font-size: 20px;
-    font-style: italic;
+    
     font-weight: bold;
     color: #000000;
 }
@@ -833,7 +984,7 @@ a {
 }
 .div-block-11 img {
     float: center;
-    width: 30px;
+    width: 55px;
     height: 30px;
 	vertical-align: middle;
     border-style: none;

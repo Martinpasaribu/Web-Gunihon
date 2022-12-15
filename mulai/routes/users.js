@@ -49,8 +49,12 @@ router.get('/home', forwardAuthenticated, (req, res) => res.render('home'));
 router.get('/materi', forwardAuthenticated, (req, res) => res.render('materi'));
 
 router.get('/materi1', forwardAuthenticated, (req, res) => res.render('materi1'));
+router.get('/materi2', forwardAuthenticated, (req, res) => res.render('materi2'));
+
 
 router.get('/kuis1', forwardAuthenticated, (req, res) => res.render('kuis1'));
+router.get('/kuis2', forwardAuthenticated, (req, res) => res.render('kuis2'));
+router.get('/kuis3', forwardAuthenticated, (req, res) => res.render('kuis3'));
 
 
 router.get('/formulir', forwardAuthenticated, (req, res) => res.render('formulir'));

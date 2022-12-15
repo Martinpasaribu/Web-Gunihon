@@ -37,7 +37,8 @@
 		<!-- <h1><a href="index.html">Guniho Branda</a></h1> -->
 		<ul>
 			<li><a href="/index">HOME</a></li>
-			<li><a href="/about">ABOUT</a></li>
+			<li><a href="/users/home">KURSUS</a></li>
+			<li><a href="/materi">MATERI</a></li>
 			<li class="dropdown"><a href="#">SERVICE</a>
 				<ul class="isi-dropdown">
 					<li><a href="/sense">SENSEI</a></li>
@@ -46,9 +47,7 @@
 
 				</ul>
 			</li>
-
-			<li><a href="/users/home">PRODUK</a></li>
-			<li><a href="/materi">MATERI</a></li>
+			<li><a href="/about">ABOUT</a></li>
 			<li><a href="/users/logout" class="btn btn-secondary" onclick="return confirm('Apa kamu yakin ingin Keluar?');" >Logout</a></li>
 		</ul>
 		
@@ -56,160 +55,179 @@
 	
 	<img  style="float:left; margin: 11px 14px 10px 14px; color: transparent;" src="logo2.png" />
 
-	<section class="label">
+	<section class="label" style="background-color: #FFFFFF;    padding:80px 0;">
+<h1 style="padding-left:60px;margin-top: 40px;background-color:transparent;color:#FFFFFF"> kursus Online <br/>
+	Bahasa Jepang</h1><br/><br/><br/><br/><br/>
+	<h5 style="margin-left:60px;margin-top: 49px;"> 
+		<br/>Belajar dari mentor profesional<br/>
+		dan mendapatkan sertifikat resmi untuk<br/>
+		melanjutkan pendidikan atau bekerja di Jepang </h5>
+
+			<a class="btn btn-secondary" style="width:220px;border-color: #96C9CA;background-color:#96C9CA ;  color:white;text-align: center;top:20px; margin-left:60px;margin-top:20px;	font-family:Poppins, sans-serif; ; padding-top:10px; padding-bottom:-20px;border-radius:8px;"> Mulai Belajar </a>
 
 
 	</section>
+ 
+    </header>
 
-</header>
-
-	<!-- baris -->
-	<!-- <div class="medsos">
-		<div class="container">
-			
-			
-				<atur >Home / Produk / Formulir </atur>
-		</br>
-			
-
-
-
-		</div>
-	</div> -->
-
-	<section class="service">
-		<div class="container">
-        <h1 class="judul" style="text-align:center" > Home Page </h1>
-        <!-- <p class="penjelas"> HALAMAN UTAMA </p> -->
-        
-		
-		
-
-
-
-
-
-
-
-
-        </div>
-    </section>
-
-
-
-	<section class="service">
-		<div class="container">
-		
-			<div class="main_menu_area">
-				<h4 style="color:aliceblue ;  text-align: center"> Promo </h4>
+	<div style="background-color:#D1D5D4;">
+		<!-- <ha class="ha" style="color:#648C8C;  margin-left:200px;padding-bottom:30px;background-size: 1873px;">  </ha> -->
+		<h1 class="judul" style="text-align:center" > Home Page </h1>
+	
+	
+		<section class="service">
+			<div class="container">
+			  <div class="row">
+				<div class="col-6 text-center section-popular-heading">
+				  <img src="/Logo Double.svg" alt="Logo Go-Nihhon" style="width:300px;height:300px" />
+				</div>
+				<div class="col-6 text-left section-popular-heading">
+				  <h2>Kenali Go-Nihhon</h2><br/>
+				  <p>
+					Go-Nihhon merupakan startup yang bergerak di bidang jasa pendidikan, salah satunya belajar Bahasa Jepang. Start up ini dibangun melihat kurangnya fasilitas pembelajaran bahasa jepang di wilayah Indonesia, khususnya Lampung.
+					Kondisi pandemi merupakan salah satu motivasi pemilik untuk menyediakan jasa kursus online Bahasa Jepang. <br /><br />
+					Pembelajaran Bahasa Jepang secara online. Kami memiliki Team Penagajar yang berpengalaman dibidangnya. Selain itu, produk yang kami berikan memilih level kelas sesuai kemampuan siswa, para siswa dapat berinteraksi dengan
+					lainnya dalam sebuah forum untuk membantu mereka belajar, siswa akan mendapatkan sertifikat di akhir pembelajaran.
+				  </p>
+				</div>
+			  </div>
 			</div>
-		  
+		  </section>
+
+
+
+
+
+			  <section class="service"  style="background-color: #D1D5D4;">
+
 				
-		   <!-- kelas isi -->
-			  <div class="isi">
-		   
-		   <div class="isinya">
-				  <div class="col3" >
-					<% for(let i = 0; i < pro1.length; i++){ %>
-					<div class="judul"><%= pro1[i].name %></div>
-					<div class="tanggal" ><strike> <%= pro1[i].hasli %></strike> : <%= pro1[i].hpromo %>/ Bulan</div>
-					<div class="gambar"><img src="header1.jpg" style="width:120%; height:170% ;padding-right:69px;margin-bottom:-30px"  ></div>
-					<div class="isiberita">
+				<div class="container" >
+
+					<div class="main_menu_area">
+						<h4 style="color:rgb(255, 255, 255) ;  text-align: center;	font-family:Poppins, sans-serif; ; padding-top:12px; padding-bottom:12px"> ---- Promo ---- </h4>
+					</div>
+				  
+						
+				   <!-- kelas isi -->
+					  <div class="isi">
+				   
+				   <div class="isinya">
+						  <div class="col3" >
+							<% for(let i = 0; i < pro1.length; i++){ %>
+							<div class="judulpromo"><%= pro1[i].name %></div>
+							
+							<div class="gambar"><img src="gpromo1.jpg" style="width:120%; height:170% ;padding-right:69px;margin-bottom:-30px"  ></div>
+							<div class="isiberita">
+				            <br/>
+									<P style="text-align:center;color:#dd2c23">Fasilitas <br></P>
+									<P style="text-align:center;"><%= pro1[i].fit1 %><br></P>
+									<P style="text-align:center;"><%= pro1[i].fit2 %><br></P>
+									<P style="text-align:center;"><%= pro1[i].fit3 %><br></P>
+									<P style="text-align:center;"><%= pro1[i].fit4 %><br></P>
+							  <br>	<br/>
+							  <div class="tanggalpromo" ><strike > <%= pro1[i].hasli %></strike> : <%= pro1[i].hpromo %>/ Bulan</div>
+							  <br>
+							
+
+							  
+							
+							  <a class="btnpromo" href="https://www.studyinjapan.go.jp/en"  target="_blank" >CEK</a>
+							  
+
 		
-							<P>Fasilitas :<br><br></P>
-							<P><%= pro1[i].fit1 %><br></P>
-							<P><%= pro1[i].fit2 %><br></P>
-							<P><%= pro1[i].fit3 %><br></P>
-							<P><%= pro1[i].fit4 %><br></P>
-					  <br>					  <br>
-					  <div class="tombol" style="padding-top:52px;margin-bottom:-60px; padding-right:60px">
-						<a href="https://www.studyinjapan.go.jp/en"  target="_blank" class="btn">Cek Selengkapnya</a>
-					  </div>
-					</div>
-		   
-		  <br>
-		  <br>
-					<div class="tag" >
-						Promo : Tersedia
-					</div>
-				  </div>
-				  <% } %>
-				</div>
-		   
+							</div>
+							<div class="tulisanpromo" >
+								Promo { Tersedia }
+								
+							  </div>
+
+						  </div>
+						  <% } %>
+						</div>
+				   
+		
+		
+				  <div class="isinya">
+						  <div class="col3">
+							<% for(let i = 0; i < pro2.length; i++){ %>
+								<div class="judulpromo" style="background-color:#e37c69"><%= pro2[i].name %></div>
+								
+							<div class="gambar"><img src="gpromo2.jpg" style="width:120%; height:180% ;padding-right:69px;margin-bottom:-30px"></div>
+							<div class="isiberita">
+								<P style="text-align:center;color:#dd2c23">Fasilitas <br></P>
+									<P style="text-align:center;"><%= pro2[i].fit1 %><br></P>
+									<P style="text-align:center;"><%= pro2[i].fit2 %><br></P>
+									<P style="text-align:center;"><%= pro2[i].fit3 %><br></P>
+									<P style="text-align:center;"><%= pro2[i].fit4 %><br></P>
+									<br>	
+									<div class="tanggalpromo" ><strike > <%= pro2[i].hasli %></strike> : <%= pro2[i].hpromo %>/ Bulan</div>
+									<br>
+								  
+	  
+									
+								  
+									<a class="btnpromo" href="https://www.studyinjapan.go.jp/en" target="_blank" >CEK</a>
+									
+
+							</div>
+				   
+							<div class="tulisanpromo" >
+								Promo { Tersedia }
+								
+							  </div>
+
+						  </div>
+						  <% } %>
+				   
+						</div>
+				   
+						 <div class="isinya">
+							<div class="col3" >
+								<% for(let i = 0; i < pro3.length; i++){ %>
+								<div class="judulpromo" style="background-color:#749c94"><%= pro3[i].name %></div>
+								
+								<div class="gambar"><img src="gpromo3.jpg" style="width:120%; height:170% ;padding-right:69px;margin-bottom:-30px"  ></div>
+								<div class="isiberita">
+								
+										<P style="text-align:center;color:#dd2c23">Fasilitas <br></P>
+										<P style="text-align:center;"><%= pro3[i].fit1 %><br></P>
+										<P style="text-align:center;"><%= pro3[i].fit2 %><br></P>
+										<P style="text-align:center;"><%= pro3[i].fit3 %><br></P>
+										<P style="text-align:center;"><%= pro3[i].fit4 %><br></P>
+										<br/>
+								  <div class="tanggalpromo" ><strike > <%= pro3[i].hasli %></strike> : <%= pro3[i].hpromo %>/ Bulan</div>
+								  <br>
+								
+	
+								  
+								
+								  <a class="btnpromo" href="https://www.studyinjapan.go.jp/en"  target="_blank" >CEK</a>
+								  
+	
+			
+								</div>
+								<div class="tulisanpromo" >
+									Promo { Tersedia }
+									
+								  </div>
+						  </div>
+						  <% } %>
+				   
+						</div>
+				   
+				   
+					  </div>  
+				   
 
 
-		<div class="isinya">
-				  <div class="col3">
-					<% for(let i = 0; i < pro2.length; i++){ %>
-						<div class="judul"><%= pro2[i].name %></div>
-						<div class="tanggal" ><strike> <%= pro2[i].hasli %></strike> : <%= pro2[i].hpromo %>/ Bulan</div>
-					<div class="gambar"><img src="header2.jpg" style="width:120%; height:180% ;padding-right:69px;margin-bottom:-30px"></div>
-					<div class="isiberita">
-						<P>Fasilitas :<br><br></P>
-						<P><%= pro2[i].fit1 %><br></P>
-						<P><%= pro2[i].fit2 %><br></P>
-						<P><%= pro2[i].fit3 %><br></P>
-						<P><%= pro2[i].fit4 %><br></P>
+				</div></section>
 
 
-					  <br>					  <br>
-					  <div class="tombol" style="padding-top:52px;margin-bottom:-60px; padding-right:60px">
-						<a href="https://www.jpf.go.jp/jft-basic/id/support/index.html" target="_blank" class="btn">Baca Selengkapnya</a>
-					  </div>
-					</div>
-		   
-						<br>
-						<br>
-					<div class="tag">
-						Promo : Tersedia
-					</div>
-				  </div>
-				  <% } %>
-		   
-				</div>
-		   
-				 <div class="isinya">
-					<div class="col3">
-					<% for(let i = 0; i < pro3.length; i++){ %>
-						<div class="judul"><%= pro3[i].name %></div>
-						<div class="tanggal" ><strike> <%= pro3[i].hasli %></strike> : <%= pro3[i].hpromo %>/ Bulan</div>
-					<div class="gambar"><img src="header3.jpg" style="width:120%; height:170% ;padding-right:69px;margin-bottom:-30px"></div>
-					<div class="isiberita">
-						<P>Fasilitas :<br><br></P>
-						<P><%= pro3[i].fit1 %><br></P>
-						<P><%= pro3[i].fit2 %><br></P>
-						<P><%= pro3[i].fit3 %><br></P>
-						<P><%= pro3[i].fit4 %><br></P>
-
-
-
-					  <br>
-					  <div class="tombol" style="padding-top:52px;margin-bottom:-60px; padding-right:60px">
-						<a href="https://hiraganatimes.com" class="btn" target="_blank" style="position:30px 0px 40px 0px;">Baca Selengkapnya</a>
-					  </div>
-					</div>
-		   
-		  <br>
-		  <br>
-					<div class="tag">
-						Promo  : Tersedia
-					</div>
-				  </div>
-				  <% } %>
-		   
-				</div>
-		   
-		   
-			  </div>  </div>
-		   
-
-
-
-			<section class="service">
+			<section class="service"  style="background-color: #ffffff;">
 				<div class="container">
 				
 					<div class="main_menu_area">
-						<h4 style="color:aliceblue ;  text-align: center"> Berita </h4>
+						<h4 style="color:rgb(0, 0, 0) ;  text-align: center;	font-family:Poppins, sans-serif; ; padding-top:12px; padding-bottom:12px"> Berita </h4>
 					</div>
 				  
 						
@@ -291,13 +309,158 @@
 			</section>
 			
 
+
+
+
+
 	
-		</div>
-	</section>
+			  
+			  <section class="section-mengapa" style="background-color: #96c9c9;">
+				<div class="container">
+				  <div class="section-title text-center">
+					<h1 h4 style="text-align:center;color:#2c4444">Mengapa Harus Kami ?</h2>
+					<br/>
+				  </div>
+				  <div class="row">
+					<div class="col-4 alasan" style="margin-left: -50px">
+					  <h5 style="text-align:center;color:#dd2c23">Tim Pengajar Berkualitas</h5>
+					  <h5 style="text-align:center;color:#dd2c23" >Kurikulum Standar Terbaik</h5>
+					  <h5 style="text-align:center;color:#dd2c23" >Suasana Belajar Kondusif</h5>
+					  <h5 style="text-align:center;color:#dd2c23">Waktu Belajar Fleksibel</h5>
+					<br><br/>
+					<a class="btnpromo" href="https://www.studyinjapan.go.jp/en"  target="_blank" style="margin-left: -100px">SENSE</a>
+							  
+					</div>
+					<div class="col-8 alasan">
+					  <h4 style="text-align:center">Tim pengajar dan penerjemah merupakan lulusan Magister Universitas di Jepang.</p>
+					  <h4 style="text-align:center">Kurikulum disesuaikan dengan level kemampuan dan mudah diikuti oleh peserta kursus.</p>
+					  <h4 style="text-align:center">Dengan Pembatasan jumlah peserta maksimal 20 orang / kelas, membuat suasana belajar menjadi lebih kondusif.</p>
+					  <h4 style="text-align:center">Waktu belajar disediakan di luar jam kerja sehingga dapat menyesuaikan dengan jadwal sekolah dan kerja.</p>
+					</div>
+				  </div>
+				</div>
+			  </section>
+		
+
+
+			  <section class="section-metode" style="background-color: #FCFCFC;">
+				<div class="container">
+				  <div class="title">
+					<h3>Metode Belajar</h3>
+				  </div>
+				  <div class="row justify-content-center" style="padding-right: 6px">
+					<div class="col-3 metode" style="margin-right: 50px">
+					  <img src="/Telegram.svg" alt="Telegram" style="margin-right: 50px;margin-left: 30px" />
+					  <h5 style="text-align:center">Grup Telegram</h5>
+					  <p style="text-align:center">Komunitas tempat sharing untuk mempermudah komunikasi</p>
+					</div>
+					<div class="col-3 metode" style="margin-right: 50px;margin-left: 50px" >
+					  <img src="/Zoom.svg" alt="Zoom" style="margin-right: 50px;margin-left: 30px" />
+					  <h5 style="text-align:center" >Zoom Meeting</h5>
+					  <p style="text-align:center">Pembelajaran menggunakan virtual zoom meeting</p>
+					</div>
+					<div class="col-3 metode" style="margin-left: 50px">
+					  <img src="/wa.svg" alt="Whatsapp" style="margin-right: 50px;margin-left: 30px" />
+					  <h5 style="text-align:center">Tanya Sensei</h5>
+					  <p style="text-align:center">Jika belum jelas bisa bertanya langsung kepada sensei</p>
+					</div>
+				  </div>
+				</div>
+			  </section>
+
+
+
+			  <section style="background-color: #D1D5D4;" class="section-testimonials-content pt-5" id="testimonialsContent">
+				<div class="container text-center" >
+					<h1>Testimoni</h1>
+				  <div class="section-popular-travel row justify-content-center match-height">
+					<div class="col-sm-6 col-md-6 col-lg-4">
+					  <div class="card card-testimonial text-center">
+						<div class="testimonial-content">
+						  <img src="/avatar1.svg" alt="" class="mb-4 rounded-circle" />
+						  <h3 class="mb-4">ANNITA</h3>
+						  <p style="text-align:center" class="testimonials">“ Pembelajaran tidak monoton karena diselingi dengan sesi diskusi terkait materi yang belum dipahami. “</p>
+						</div>
+						<hr />
+						<p class="trip-to mt-2" style="text-align:center">Gakusei Basic Level (N5)</p>
+					  </div>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-4">
+					  <div class="card card-testimonial text-center">
+						<div class="testimonial-content">
+						  <img src="/avatar2.svg" alt="" class="mb-4 rounded-circle" />
+						  <h3 class="mb-4">HELMI</h3>
+						  <p class="testimonials" style="text-align:center" >“ Belajar bahasa jepang dengan mawar senpai sangat menarik dan materi sangat mudah dipahami bagi pemula. “</p>
+						</div>
+						<hr />
+						<p class="trip-to mt-2" style="text-align:center"  >Gakusei Basic Level (N5)</p>
+					  </div>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-4">
+					  <div class="card card-testimonial text-center">
+						<div class="testimonial-content mb-auto">
+						  <img src="/avatar3.svg" alt="" class="mb-4 rounded-circle" />
+						  <h3 class="mb-4">DAFFA</h3>
+						  <p class="testimonials" style="text-align:center" >“Belajar bahasa jepang disini mudah dipahami, tiap hari selalu ada materi baru yang buat aku tambah excited. “</p>
+						</div>
+						<hr />
+						<p class="trip-to mt-2" style="text-align:center">Gakusei Beginner Level</p>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </section>
+		
+
+
+			  <section class="container-fluid bg-mulai-belajar">
+				<div class="container-sm" style="background-color: #648C8C;">
+				  <div class="row justify-content-between">
+					<div class="col-lg-6 col-sm-9 text-white fw-bold my-4 text-center">
+					  <h3>Belajar Bahasa Jepang dengan Go-Nihhon</h3>
+					</div>
+					<div class="col-sm-3 btn-mulai-belajar my-4 text-center" style=" margin-right: 58px;top: 40px;height:67px;background-color: #251C1C;" >
+					  <a href="https://wa.link/q2mvvb" target="_blank" class="px-4" style="color:white"> Mulai Belajar </a>
+					</div>
+				  </div>
+				</div>
+			  </section>
+
+			  <section class="py-4">
+				<!-- Instagram -->
+				<a class="btn text-white btn-floating m-1" href="https://instagram.com/go.nihhon?igshid=N2ZiY2E3YmU=" role="button" target="_blank">
+				  <img src="/instagram.svg" style="height:100px; margin-right: -70px" alt="logo_instagram" />
+				</a>
+	  
+				<!-- Tiktok -->
+				<a class="btn text-white btn-floating m-1" href="https://www.tiktok.com/@gonihhon?_t=8XlQFI6tXDm&_r=1" role="button" target="_blank">
+				  <img src="/tiktok.svg" style="height:100px;margin-right: -70px" alt="logo_tiktok" />
+				</a>
+	  
+				<!-- Youtube -->
+				<a class="btn text-white btn-floating m-1" href="https://www.youtube.com/@go-nihhon/featured" role="button" target="_blank">
+				  <img src="/youtube.svg" style="height:100px;margin-right: -70px" alt="logo_youtube" />
+				</a>
+	  
+				<!-- Email -->
+				<a class="btn text-white btn-floating m-1" href="mailto:gonihhon@gmail.com" role="button" target="_blank">
+				  <img src="/email.svg" style="height:100px;margin-right: -70px" alt="logo_email" />
+				</a>
+				<!-- Whatsapp -->
+				<a class="btn text-white btn-floating m-1" href="https://wa.link/q2mvvb" role="button" target="_blank">
+				  <img src="/whatsapp.svg"  style="height:100px;margin-right: -70px" alt="logo_whatsapp" />
+				</a>
+				<!-- Telepon -->
+				<a class="btn text-white btn-floating m-1" href="tel:0721700681" role="button" target="_blank">
+				  <img src="/telpon.svg" style="height:100px;margin-right: -70px" alt="logo_telpon" />
+				</a>
+			  </section>
+		
 
 
 
 
+		
 
 
 

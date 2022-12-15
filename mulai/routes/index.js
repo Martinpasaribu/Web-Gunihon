@@ -43,17 +43,7 @@ const promo3 = require('../models/promo3');
 
 
 
- router.get('/formulir2', async (req,res) => {
-  
-  // const Formulir = await formulir.find();
-  // console.log(Formulir.name);
-  // res.render('indexx',{Formulir:Formulir});
-  const Name = await formulir.find().sort({"date": -1}).limit(1); 
-  // const Name = await formulir.find().limit(10).pretty();
-  res.render('formulir2',{Name:Name});
-  console.log(Name);
- 
- });
+
 
  
 
@@ -148,19 +138,6 @@ const promo3 = require('../models/promo3');
 
 
 
- router.get('/index', async (req,res) => {
-  
-  // const Formulir = await formulir.find();
-  // console.log(Formulir.name);
-  // res.render('indexx',{Formulir:Formulir});
-  const pro1 = await promo1.find(); 
-  const pro2 = await promo2.find();
-  const pro3 = await promo3.find();
-  // const Name = await formulir.find().limit(10).pretty();
-  // console.log(abouts);
-  res.render('index',{pro1:pro1,pro2:pro2,pro3:pro3});
-
- });
 
  
  router.get('/about', async (req,res) => {
@@ -188,11 +165,27 @@ router.get('/', forwardAuthenticated, (req, res) => res.render('welcome'));
 
 
 
-router.get('/index', ensureAuthenticated, (req, res) =>
-  res.render('index', {
-    user: req.user
-  })
-);
+// router.get('/index', ensureAuthenticated, (req, res) =>
+//   res.render('index', {
+//     user: req.user
+//   })
+// );
+
+router.get('/index', ensureAuthenticated, async (req,res) => {
+  
+  // const Formulir = await formulir.find();
+  // console.log(Formulir.name);
+  // res.render('indexx',{Formulir:Formulir});
+  const pro1 = await promo1.find(); 
+  const pro2 = await promo2.find();
+  const pro3 = await promo3.find();
+  // const Name = await formulir.find().limit(10).pretty();
+  // console.log(abouts);
+  res.render('index',{pro1:pro1,pro2:pro2,pro3:pro3});
+
+ });
+
+
 
 router.get('/indexx', ensureAuthenticated, (req, res) =>
   res.render('indexx', {
@@ -216,12 +209,29 @@ router.get('/materi1', ensureAuthenticated, (req, res) =>
     user: req.user
   })
 );
+router.get('/materi2', ensureAuthenticated, (req, res) =>
+  res.render('materi2', {
+    user: req.user
+  })
+);
+
 router.get('/kuis1', ensureAuthenticated, (req, res) =>
   res.render('kuis1', {
     user: req.user
   })
 );
 
+router.get('/kuis2', ensureAuthenticated, (req, res) =>
+  res.render('kuis2', {
+    user: req.user
+  })
+);
+
+router.get('/kuis3', ensureAuthenticated, (req, res) =>
+  res.render('kuis3', {
+    user: req.user
+  })
+); 
 router.get('/formulir', ensureAuthenticated, (req, res) =>
   res.render('formulir', {
     user: req.user
@@ -243,11 +253,23 @@ router.get('/about', ensureAuthenticated, (req, res) =>
   })
 );
 
-router.get('/formulir2', ensureAuthenticated, (req, res) =>
-  res.render('formulir2', {
-    user: req.user
-  })
-);
+// router.get('/formulir2', ensureAuthenticated, (req, res) =>
+//   res.render('formulir2', {
+//     user: req.user
+//   })
+// );
+
+router.get('/formulir2',ensureAuthenticated, async (req,res) => {
+  
+  // const Formulir = await formulir.find();
+  // console.log(Formulir.name);
+  // res.render('indexx',{Formulir:Formulir});
+  const Name = await formulir.find().sort({"date": -1}).limit(1); 
+  // const Name = await formulir.find().limit(10).pretty();
+  res.render('formulir2',{Name:Name});
+  console.log(Name);
+ 
+ });
 
 
 router.get('/berita', ensureAuthenticated, (req, res) =>

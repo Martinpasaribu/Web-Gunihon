@@ -1,180 +1,161 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Guniho Branda</title>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Go-Nihhon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="Images/Div_Header/Logo-Gonihhon.svg" type="image/x-icon" />
+    <!-- My Css -->
+    <link rel="stylesheet" href="/Frontend/Styles/style.css" />
 
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="../css/style2.css">
 	
-
-</head>
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
-	<!-- loader -->
-	<div class="bg-loader">
-		<div class="loader"></div>
-	</div>
-
-	<!-- header -->
-	<div class="medsos">
-		<div class="container">
-			<ul>
-				<li><a href="#"><i class="fab fa-facebook"></i></a></li>
-				<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-			</ul>
-		</div>
-	</div>
-    
-	<header>
+    <!-- CSS Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Start Jumbotron FAQ -->
+    <header>
 		
-			<!-- <h1><a href="index.html">Guniho Branda</a></h1> -->
-			<ul>
-				<li><a href="/index">HOME</a></li>
-				<li><a href="#">ABOUT</a></li>
-				<li class="dropdown" class="active"><a href="#">SERVICE</a>
-					<ul class="isi-dropdown">
-						<li><a href="/sense">SENSEI</a></li>
-						<li style="margin-right: 200px;"><a href="/faq">FAQ</a></li>
-						<li><a href="/berita">NEWS</a></li>
-						
-					</ul>
-				</li>
-				<li><a href="/users/home">PRODUK</a></li>
-				<li><a href="/materi">MATERI</a></li>
-				
-			</ul>
-			<img  style="float:left; margin: 11px 14px 10px 14px; color: transparent;" src="logo2.png" />
-		<!-- label -->
-		<section class="label">
+		<!-- <h1><a href="index.html">Guniho Branda</a></h1> -->
+		<ul>
+			<li><a href="/index">HOME</a></li>
+			<li><a href="/users/home">KURSUS</a></li>
+			<li><a href="/materi">MATERI</a></li>
+			<li class="dropdown"><a href="#">SERVICE</a>
+				<ul class="isi-dropdown">
+					<li><a href="/sense">SENSEI</a></li>
+					<li style="margin-right: 200px;"><a href="/faq">FAQ</a></li>
+					<li><a href="/berita">NEWS</a></li>
 
-		</section>
+				</ul>
+			</li>
+			<li><a href="/about">ABOUT</a></li>
 
-    </header>
+		</ul>
+		
+		<img  style="float:left; margin: 11px 14px 10px 14px; color: transparent;" src="logo2.png" />
+	<!-- label -->
 
-	<!-- baris -->
+
+<section class="labelabout" style="background-color: #fbfbfc;    padding:178px 0;">
+	<h1 style="font-weight: bold; font-size:60px;padding-left: 1200px;    padding: 4px 124px;color:#ffffff;background-color:transparent"> FAQ</h1><br/><br/><br/>
+
+</section>
+
+
 	<div class="medsos">
 		<div class="container">
 			
 			
-				<atur > Home / Service / FAQ </atur>
-			
+				<atur >Home / FAQ </atur>
+		</br>
+
+
+        
 		</div>
 	</div>
+</header>
+    <!-- End Jumbotron Galeri -->
+
+    <!-- Start Main -->
+    <section class="service">
+        <div class="container" >
+    <main class="container mb-5">
+      <h2 class="text-center fw-bold my-5">FREQUENTLY ASKED QUESTIONS</h2>
+
+      <div class="accordion" id="accordionExample">
+        <!-- Pertanyaan 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Bagaimana cara mendaftar Kursus?</button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Cara Daftar Kursus</strong> Mengisi form pendaftaran dengan mengisi program kelas yang ingin diikuti dan lakukan pembayaran dengan mentransfer ke rekening , kemudian konfirmasi ke Wa Admin
+            </div>
+          </div>
+        </div>
+
+        <!-- Pertanyaan 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Apa itu JLPT?</button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body"><strong>Japanese-Language Proficiency Test</strong> Ujian kemampuan bahasa Jepang yang terdiri dari level N5 sampai N1.</div>
+          </div>
+        </div>
+
+        <!-- Pertanyaan 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Apa yang akan siswa dapat belajar di Go-Nihhon?</button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body"><strong>Apa saja yang didapat</strong> Siswa akan mendapatkan materi, record meeting, komunitas bahasa Jepang, Konsultasi dengan Sensei, dan Promo untuk lanjut ke program selanjutnya.</div>
+          </div>
+        </div>
+
+        <!-- Pertanyaan 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Apakah terdapat kursus offline atau private?</button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body"><strong>Apa tersedia offline / private</strong> Kami menyediakan kursus offline dan private di daerah Bandar Lampung.</div>
+          </div>
+        </div>
+
+        <!-- Pertanyaan 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Apa yang akan siswa dapat belajar di Go-Nihhon?</button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+            <div class="accordion-body"><strong>Apa saja yang didapat</strong> Siswa akan mendapatkan materi, record meeting, komunitas bahasa Jepang, Konsultasi dengan Sensei, dan Promo untuk lanjut ke program selanjutnya.</div>
+          </div>
+        </div>
+
+        <!-- Pertanyaan 6 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Sistem pembelajar online menggunakan apa?</button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+            <div class="accordion-body"><strong>Sistem Pembelajaran Online Bahasa Jepang</strong> Pembelajaran online menggunakan zoom meeting</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- END main -->
+</section>
+
+    <!-- Start Mulai Belajar -->
 
 
-	<!-- service -->
-	<section class="service">
-		<div class="container">
+    <!-- End Mulai Belajar -->
 
-
-			
-			<h3>FREQUENTLY ASKED QUESTIONS</h3>
-			<div class="box">
-				
-                
-<div class="w-row">
-	<div class="plans-column-2 w-col w-col-6">
-		
-		<table border="1" style="float:left ; margin-right: 40px;">
-			<tr bgcolor="#9d97a3" align="center">
-				<td colspan="3">+ Bagaiman Pada menggunakan Kelas Berbayar ?  </td>
-				
-			</tr>
-
-		
-			<tr bgcolor="#dbdbdb">
-				<td >Daftar dengan mengisi edia</td>
-			
-			</tr>
-			
-
-		</table>
-
-		<table border="1" style="float:right" >
-			
-			<tr bgcolor="#9d97a3" align="center">
-				<td colspan="3">+ Bagaimana cara mendapatkan promo?  </td>
-				
-			</tr>
-
-		
-			<tr bgcolor="#dbdbdb">
-				<td >Daftar dengan tersedia</td>
-			
-			</tr>
-
-		</table>
-
-	</br>
-</br>
-</br>
-<!-- 
-		baris 2  -->
-
-		<table border="1" style="float:left ; margin-right: 40px;">
-			<tr bgcolor="#9d97a3" align="center">
-				<td colspan="3">+ Bagaimana Mengerjakan Soal Kuis ?  </td>
-				
-			</tr>
-
-		
-			<tr bgcolor="#dbdbdb">
-				<td >Masuk Pada Menu Materi</td>
-			
-			</tr>
-			
-
-		</table>
-	
-		
-		<table border="1" style="float:right" >
-			
-			<tr bgcolor="#9d97a3" align="center">
-				<td colspan="3">+ Bagaimana cara Berlangganan  Kelas Berbayar?  </td>
-				
-			</tr>
-
-		
-			<tr bgcolor="#dbdbdb">
-				<td >Daftartarkan Data Diri dan Pilih Kelas </td>
-			
-			</tr>
-
-		</table>
-
-
-			</div>
-		</div>
-
-
-
-
-
-				
-			</div>
-			
-		</div>
-	</section>
-
-	<!-- footer -->
+    <!-- Start Footer -->
 	<footer>
 		<div class="container">
 			<small>Copyright &copy; 2022 - Go-Project. All Rights Reserved.</small>
 		</div>
 	</footer>
-
+  <!-- End Footer -->
 
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$(".bg-loader").hide();
 		})
+
+		
 	</script>
+  
 
-
-
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
 </html>

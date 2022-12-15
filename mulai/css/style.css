@@ -1,7 +1,6 @@
 * {
 	
-	margin:0%;
-	font-size: 20px;
+	font-family: "Poppins", sans-serif;
 
 }
 .text-center {
@@ -17,6 +16,7 @@
     position: relative;
     overflow: hidden;
     z-index: 2;
+	padding-bottom: 34px;
 }
 
 .project h6 {
@@ -45,13 +45,15 @@
 
 .project .content {
     position: absolute;
-    left: 10%;
+    left: 5%;
     bottom: 10%
 }
 
 .project h2,
 .project h6 {
     color: #fff;
+	text-align: left;
+	margin-left: 0;
 }
 
 .ig{
@@ -89,7 +91,7 @@ p1{
 body{
 	margin-bottom: 0px;
 	padding:0px;
-	background-image: url('/gambar/login1.jpg');
+	background-image: url('/gambar/bgbaru.png');
 	background-size:200%;
 	background-position: center;
 	font-family: sans-serif;
