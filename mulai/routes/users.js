@@ -27,6 +27,7 @@ const promo1 = require('../models/promo1');
 const promo2 = require('../models/promo2');
 const promo3 = require('../models/promo3');
 
+const visit = require('../models/visit');
 
 const { forwardAuthenticated } = require('../config/auth');
 
@@ -105,6 +106,7 @@ id didapat database dan id isinya dari params
 
 // deleted user
 
+// visitor
 
 
 

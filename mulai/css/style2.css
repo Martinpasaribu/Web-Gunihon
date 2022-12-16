@@ -3,6 +3,47 @@
     font-family: "Poppins", sans-serif;
 	
 }
+.aau img {
+    position: relative;
+    left:60px;
+    top:20px
+}
+
+
+/* tabel pengujung */
+
+ .vistor { 
+    padding-top:100px;
+border-color: #000000;
+
+}
+
+div .vistor  .a{
+    
+	font-family: "Poppins", sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: #648C8C;
+    padding:14px 14px 14px 14px;
+    top:100px;
+}
+
+
+div .vistor  .b{
+    
+	font-family: "Poppins", sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    padding:14px 14px 14px 14px;
+    top:100px;
+
+
+}
+
+
 
 
 .className{
@@ -24,13 +65,13 @@
 
 li:hover,
 li:focus-within {
-  background: #39beaa;
+  background: #749c94;
   cursor: pointer;
   
 }
 li {
     color: rgb(0, 0, 0);
-    background: #128277;
+    background: #648C8C;
     display: block;
    
     padding: 1rem;
@@ -85,7 +126,7 @@ li.dropdown {
     display: none;
     
     z-index: 2;
-    background-color:#128277;
+    background-color:#749c94;
 }
 
 .isi-dropdown a {
@@ -208,13 +249,13 @@ line-height: 40px;
 
 .medsos {
 	padding:2px 0;
-    background-image: linear-gradient(#004A79,#128277);;
+    background-image:#648C8C;
 }
 .medsos ul li {
 	display: inline-block;
 	color: #fff;
 	margin-right: 10px;
-    background-image: linear-gradient(#004A79,#128277);;
+    background-image:#749c94;
 }
 .container {
 	width:80%;
@@ -240,11 +281,11 @@ header h1 {
 }
 header ul {
 	float: right;
-    background-image: linear-gradient(#128277,#004A79);;
+    background-color: #648C8C;
 }
 header ul li {
 	display: inline-block;
-	background-image: linear-gradient(#128277,#004A79);;
+	background-color: #648C8C;
 }
 header ul li a {
 	padding:25px 20px;
@@ -273,10 +314,10 @@ header ul  .active {
 
 .btn-secondary {
     
-    background-color: #f25754;
-    color: #9e100d;
-    border-color: #9e100d;
-	margin-right: 8px;
+    background-color: #b61f22;
+    color: #ffffff;
+    border-color: #b61f22;
+	margin-right: 10px;
 	height: 50px;
 }
 
@@ -463,9 +504,9 @@ footer {
 Berita */
 
 
-.main_menu_area{overflow:visible; background:#2c4444; min-height:40px; margin-bottom: 30px;    border-radius: 10px;}
-.main_menu_area ul{margin:0; padding:0; list-style:none ; background-color: #000;}
-.main_menu_area ul li{float:left; position:relative ; background-color: #000; }
+.main_menu_area{overflow:visible; background:#000; min-height:58px; margin-bottom: 30px;    border-radius: 10px;}
+.main_menu_area ul{margin:0; padding:0; list-style:none ; background-color: #000;border-radius: 10px;}
+.main_menu_area ul li{float:left; position:relative ; background-color: #000;border-radius: 10px; }
 .main_menu_area ul li a{color:#FFF; display:block;font-family: 'poppins'; font-size:15px; }
 .main_menu_area ul li a:hover{background:#CF0000}
 .main_menu_area ul {background-color: #000}
@@ -496,7 +537,7 @@ Berita */
   box-sizing: border-box;
 }
  
-.judul{
+.judula{
   width: 100%;
   box-sizing: border-box;
   /* background-image: linear-gradient(#004A79,#128277); */
@@ -506,10 +547,49 @@ Berita */
   font-size: 20px;
   font-weight: bold;
   color: white;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+
 }
 
+ 
+.container .judul {
+    width: 100%;
+    box-sizing: border-box;
+    /* background-image: linear-gradient(#004A79,#128277); */
+    padding: 31px;
+    background-color: #648C8C;
+    padding-bottom: 32px;
+    font-size: 29px;
+    font-weight: bold;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.container .judulnews {
+    width: 100%;
+    box-sizing: border-box;
+    /* background-image: linear-gradient(#004A79,#128277); */
+    padding: -1px;
+    background-color: #648C8C;
+    padding-bottom: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+  
+}
+
+
+.isiberita .tombolnews .btn{
+    padding-top: -11px;
+    margin-bottom: 23px;
+    margin-top: 40px;
+    margin-left: 58px;
+    padding-right: 21px;
+    padding-left: -6px;
+    background-color: #17204E;
+    color: white;
+    font-size: 20px;
+    left: 10px;
+}
 .judulpromo{
     width: 100%;
     box-sizing: border-box;

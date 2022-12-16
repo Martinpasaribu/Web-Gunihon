@@ -3,14 +3,50 @@
 	font-family: "Poppins", sans-serif;
 
 }
-.text-center {
+
+/* welcome */
+/* 
+.rowa {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -194px;
+    margin-left: -181px;
+    margin-top: 29px;
+    margin-bottom: -15px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    margin-bottom: 119px;
+}
+
+.btn-primarya {
+    color: #fff;
+    padding: 10px 10px 21px 10px;
+    font-size: 35px;
+    background-color: #eb6864;
+    border-color: #eb6864;
+
+}
+
+.btn-blocka {
+    display: block;
+    width: 100%;
+	font-size: 30px;
+    padding: 11px 10px 10px 9px;
+}
+
+.text-centera {
 	flex: 1 1 auto;
     min-height: 1px;
     padding-top: 1.25rem;
     padding-right: 1rem;
     padding-bottom: 1.25rem;
     padding-left: 1rem
-}
+} */
 
 .project {
     position: relative;
@@ -187,7 +223,7 @@ line-height: 40px;
 
 .medsos {
 	padding:5px 0;
-	background-color: #148F77;
+	background-color: #648C8C;
 }
 .medsos ul li {
 	display: inline-block;
@@ -207,12 +243,12 @@ line-height: 40px;
 }
  h1 {
 
-	color: #148F77;
+	color: #648C8C;
 }
 header h1 {
 	float: left;
 	padding:15px 0;
-	color: #148F77;
+	color: #648C8C;
 }
 header ul {
 	float: right;
@@ -225,7 +261,7 @@ header ul li a {
 	display: inline-block;
 }
 header ul li a:hover {
-	background-color: #148F77;
+	background-color: #648C8C;
 	color: #fff;
 }
 .active {

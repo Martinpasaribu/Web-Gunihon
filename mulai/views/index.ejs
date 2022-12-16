@@ -42,8 +42,8 @@
 			<li class="dropdown"><a href="#">SERVICE</a>
 				<ul class="isi-dropdown">
 					<li><a href="/sense">SENSEI</a></li>
-					<li style="margin-right: 200px;"><a href="/faq">FAQ</a></li>
-					<li><a href="/berita">NEWS</a></li>
+					<li style="margin-left: 0px;margin-right: 0px;"><a href="/faq" style="margin:0px  14px 0px 15px">FAQ</a></li>
+					<li><a href="/berita" style="margin-left:10px">NEWS</a></li>
 
 				</ul>
 			</li>
@@ -52,9 +52,9 @@
 		</ul>
 		
 	<!-- label -->
-	
-	<img  style="float:left; margin: 11px 14px 10px 14px; color: transparent;" src="logo2.png" />
-
+	<div  class="aau">
+	<img  style="float:left;  color: transparent;" src="logo2.png" />
+</div>
 	<section class="label" style="background-color: #FFFFFF;    padding:80px 0;">
 <h1 style="padding-left:60px;margin-top: 40px;background-color:transparent;color:#FFFFFF"> kursus Online <br/>
 	Bahasa Jepang</h1><br/><br/><br/><br/><br/>
@@ -63,7 +63,7 @@
 		dan mendapatkan sertifikat resmi untuk<br/>
 		melanjutkan pendidikan atau bekerja di Jepang </h5>
 
-			<a class="btn btn-secondary" style="width:220px;border-color: #96C9CA;background-color:#96C9CA ;  color:white;text-align: center;top:20px; margin-left:60px;margin-top:20px;	font-family:Poppins, sans-serif; ; padding-top:10px; padding-bottom:-20px;border-radius:8px;"> Mulai Belajar </a>
+			<a href="/materi" class="btn btn-secondary" style="width:220px;border-color: #96C9CA;background-color:#96C9CA ;  color:white;text-align: center;top:20px; margin-left:60px;margin-top:20px;	font-family:Poppins, sans-serif; ; padding-top:10px; padding-bottom:-20px;border-radius:8px;"> Mulai Belajar </a>
 
 
 	</section>
@@ -72,15 +72,39 @@
 
 	<div style="background-color:#D1D5D4;">
 		<!-- <ha class="ha" style="color:#648C8C;  margin-left:200px;padding-bottom:30px;background-size: 1873px;">  </ha> -->
-		<h1 class="judul" style="text-align:center" > Home Page </h1>
+		<h1 class="judula" style="text-align:center" > Home Page </h1>
 	
 	
 		<section class="service">
 			<div class="container">
 			  <div class="row">
 				<div class="col-6 text-center section-popular-heading">
-				  <img src="/Logo Double.svg" alt="Logo Go-Nihhon" style="width:300px;height:300px" />
+				  <img src="/Logo Double.svg" alt="Logo Go-Nihhon" style="width:300px;height:430px" />
+			
+
+				  <table border="2" class="vistor">
+					
+					<tr>
+						<td class="a">Pengguna</td>
+						<td class="a">Transaksi</td>
+						<td class="a">Pengujung</td>
+					</tr>
+				
+					<tr>
+						<td class="b" ><h2><%= user.length %></h2></td>
+						
+							<td class="b"> <h2><%= tr.length %></h2></td>
+						
+						<% for(let i = 0; i < visitors.length; i++){ %>
+						<td class="b"><h2><%= visitors[i].count %></h2></td>
+						<% } %>
+					</tr>
+					
+				</table>
+
+
 				</div>
+				
 				<div class="col-6 text-left section-popular-heading">
 				  <h2>Kenali Go-Nihhon</h2><br/>
 				  <p>
@@ -166,7 +190,7 @@
 	  
 									
 								  
-									<a class="btnpromo" href="https://www.studyinjapan.go.jp/en" target="_blank" >CEK</a>
+									<a class="btnpromo" href="/formulir" target="_blank" >CEK</a>
 									
 
 							</div>
@@ -223,7 +247,7 @@
 				</div></section>
 
 
-			<section class="service"  style="background-color: #ffffff;">
+			<!-- <section class="service"  style="background-color: #ffffff;">
 				<div class="container">
 				
 					<div class="main_menu_area">
@@ -231,7 +255,7 @@
 					</div>
 				  
 						
-				   <!-- kelas isi -->
+				  
 					  <div class="isi">
 				   
 				   <div class="isinya">
@@ -307,7 +331,7 @@
 			
 				</div>
 			</section>
-			
+			 -->
 
 
 
@@ -420,7 +444,7 @@
 					  <h3>Belajar Bahasa Jepang dengan Go-Nihhon</h3>
 					</div>
 					<div class="col-sm-3 btn-mulai-belajar my-4 text-center" style=" margin-right: 58px;top: 40px;height:67px;background-color: #251C1C;" >
-					  <a href="https://wa.link/q2mvvb" target="_blank" class="px-4" style="color:white"> Mulai Belajar </a>
+					  <a href="/home" target="_blank" class="px-4" style="color:white"> Mulai Belajar </a>
 					</div>
 				  </div>
 				</div>

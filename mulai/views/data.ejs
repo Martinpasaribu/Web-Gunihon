@@ -109,7 +109,7 @@
                     <th colspan="1" style="padding-left: 20px; padding-right: 20px">No</th>
                     <th style="padding-left: 70px; padding-right: 70px">Name</th>
                     <th style="padding-left: 70px; padding-right: 70px">Email</th>
-                    <th style="padding-left: 80px; padding-right: 80px">Gender</th>
+                    <th style="padding-left: 80px; padding-right: 80px">Password</th>
                     <th style="padding-left: 80px; padding-right: 80px">AKsi</th>
                   </tr>
                 </thead>
@@ -119,7 +119,8 @@
                       <td style="text-align: center"><%= i +1 %></td>
                       <td style="padding-left: 10px"><%= customers[i].name %></td>
                       <td style="padding-left: 10px"> <%= customers[i].email %></td>
-                      <td></td>
+					  <td></td>
+					  <!-- <td style="padding-left: 10px;padding-bottom:20px;"> <%= customers[i].password %></td> -->
                       <td class="text-center">
                         <a href="/updateCustomer/<%= customers[i]._id %>" class="btn btn-outline-warning btn-sm button-update">
 						Edit

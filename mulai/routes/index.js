@@ -11,53 +11,56 @@ const promo1 = require('../models/promo1');
 const promo2 = require('../models/promo2');
 const promo3 = require('../models/promo3');
 
+const visit = require('../models/visit');
 
-// formulir 2
 
-// router.get('/indexx', async (req,res) => {
-//   // const Formulir = await formulir.find();
-//   // console.log(Formulir.name);
-//   // res.render('indexx',{Formulir:Formulir});
-//   const Name = await formulir.findOne({ name :"Melinda"}); 
-//   res.render('indexx',{Name:Name});
+router.get('/', forwardAuthenticated,async function(req,res){
+      
+  // Storing the records from the Visitor table
+  let visitors = await visit.findOne({name: 'localhost'})
+
+  // If the app is being visited first
+  // time, so no records
+  if(visitors == null) {
+        
+      // Creating a new default record
+      const beginCount = new visit({
+          name : 'localhost',
+          count : 1
+      })
+
+      // Saving in the database
+      beginCount.save()
+
+      // Sending thee count of visitor to the browser
+      res.send(`<h2>Counter: `+1+'</h2>')
+
+      // Logging when the app is visited first time
+      console.log("First visitor arrived")
+  }
+  else{
+        
+      // Incrementing the count of visitor by 1
+      visitors.count += 1;
+
+      // Saving to the database
+      visitors.save()
+
+      // Sending thee count of visitor to the browser
+      // res.send(`<h2>Counter: `+visitors.count+'</h2>')
+      let jum = visitors.count ;
+
+      res.render('welcome');
+
+      // Logging the visitor count in the console
+      console.log("visitor arrived: ",visitors.count)
+  }
+})
+
+
+
  
-//  });
 
-
-//  updoto
-
-// const homeController = require("../controllers/home");
-// const uploadController = require("../controllers/upload");
-
-// let routes = app => {
-//   router.get("/", homeController.getHome);
-
-//   router.post("/upload", uploadController.uploadFiles);
-//   router.get("/files", uploadController.getListFiles);
-//   router.get("/files/:name", uploadController.download);
-
-//   return app.use("/", router);
-// };
-
-
-
-
-
-
-
- 
-
-//  router.get('/ufoto', async (req,res) => {
-  
-//   // const Formulir = await formulir.find();
-//   // console.log(Formulir.name);
-//   // res.render('indexx',{Formulir:Formulir});
-//   const imagess = await db.find(); 
-//   // const Name = await formulir.find().limit(10).pretty();
-//   // console.log(Name);
-//   res.render('ufoto',{imagess:imagess});
- 
-//  });
 
  router.get('/data', async (req,res) => {
   
@@ -171,6 +174,8 @@ router.get('/', forwardAuthenticated, (req, res) => res.render('welcome'));
 //   })
 // );
 
+
+
 router.get('/index', ensureAuthenticated, async (req,res) => {
   
   // const Formulir = await formulir.find();
@@ -179,9 +184,12 @@ router.get('/index', ensureAuthenticated, async (req,res) => {
   const pro1 = await promo1.find(); 
   const pro2 = await promo2.find();
   const pro3 = await promo3.find();
+  let tr = await formulir.find();
+  let user = await Users.find();
+  let visitors = await visit.find();
   // const Name = await formulir.find().limit(10).pretty();
   // console.log(abouts);
-  res.render('index',{pro1:pro1,pro2:pro2,pro3:pro3});
+  res.render('index',{user:user,tr:tr,pro1:pro1,pro2:pro2,pro3:pro3,visitors:visitors});
 
  });
 
