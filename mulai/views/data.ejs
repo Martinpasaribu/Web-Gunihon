@@ -43,12 +43,12 @@
 			<li><a href="/data">DATA</a></li>
 			<li><a href="/about2">ABOUT</a></li>
 			<li><a href="/foto">FOTO</a></li>
-			<li><a href="/pembelian">Pembelian</a></li>
-			<li class="dropdown"><a href="#">Promo</a>
+			<li><a href="/pembelian">PEMBELIAN</a></li>
+			<li class="dropdown"><a href="#">PROMO</a>
 				<ul class="isi-dropdown">
 					<li><a href="/Produk">Promo1</a></li>
-					<li style="margin-right: 200px;"><a href="/produk1">Promo2</a></li>
-					<li><a href="/produk2">Promo3</a></li>
+					<li  ><a href="/produk1" style="margin:0px  0px 0px 0px">Promo2</a></li>
+					<li ><a href="/produk2 "  style="margin-left:0px">Promo3</a></li>
 
 				</ul>
 			</li>
@@ -57,7 +57,7 @@
 		
 		
 	<!-- label -->
-	<section class="label">
+	<section class="label"     style="padding: 190px 0;">
 
 	</section>
 
@@ -121,13 +121,13 @@
                       <td style="padding-left: 10px"> <%= customers[i].email %></td>
 					  <td></td>
 					  <!-- <td style="padding-left: 10px;padding-bottom:20px;"> <%= customers[i].password %></td> -->
-                      <td class="text-center">
+					  <td class="text-center" style="padding-top:20px">
                         <a href="/updateCustomer/<%= customers[i]._id %>" class="btn btn-outline-warning btn-sm button-update">
-						Edit
+						Ubah
 					    </a>
 
                         <a href="/deleteCustomer/<%= customers[i]._id %>" class="btn btn-outline-danger btn-sm button-delete">
-							deleted
+							Hapus
 						</a>
                       </td>
 

@@ -38,22 +38,22 @@
 		<ul>
 			<li><a href="/data">DATA</a></li>
 			<li><a href="/about2">ABOUT</a></li>
-      <li><a href="/foto">Foto</a></li>
-      <li><a href="/pembelian">Pembelian</a></li>
-      <li class="dropdown"><a href="#">Promo</a>
-        <ul class="isi-dropdown">
-            <li><a href="/Produk">Promo1</a></li>
-            <li style="margin-right: 200px;"><a href="/produk1">Promo2</a></li>
-            <li><a href="/produk2">Promo3</a></li>
+			<li><a href="/foto">FOTO</a></li>
+			<li><a href="/pembelian">PEMBELIAN</a></li>
+			<li class="dropdown"><a href="#">PROMO</a>
+				<ul class="isi-dropdown">
+					<li><a href="/Produk">Promo1</a></li>
+					<li  ><a href="/produk1" style="margin:0px  0px 0px 0px">Promo2</a></li>
+					<li ><a href="/produk2 "  style="margin-left:0px">Promo3</a></li>
 
-        </ul>
-    </li>
-			
+				</ul>
+			</li>
+			<li><a href="/users/logout" class="btn btn-secondary" onclick="return confirm('Apa kamu yakin ingin Keluar?');" >Logout</a></li>
 		</ul>
 		
 		
 	<!-- label -->
-	<section class="label">
+	<section class="label"     style="padding: 190px 0;">
 
 	</section>
 
@@ -154,22 +154,21 @@
 				  <td style="padding-left: 10px"><%= pro2[i].name %></td>
 				  <td style="padding-left: 10px"> <%= pro2[i].hasli %></td>
 				  <td style="padding-left: 10px"> <%= pro2[i].hpromo %></td>
-
-				  <td class="text-center">
+				  <td class="text-center" style="padding-top:20px">
 
 					<form action="/users/about2:id" 
 						method="POST">
 					 
 				   
 					<a href="#" class="btn btn-outline-warning btn-sm button-update"
-					  >Edit</a
+					  >Ubah</a
 					>
 					<button type="submit" 
 					
 					class="btn btn-outline-danger btn-sm" 
 					onclick="return confirm('Apa kamu yakin ingin menghapus aku dari ingatan kamu?');"
 					>
-					  Delete
+					  Hapus
 					</button>
 				  </form>
 				  </td>
